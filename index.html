@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="assets/arcade.png">
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 offset-md-3 box">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <h1 id="signup">SIGNUP</h1>
+                        </div>
+                    </div>
+
+                    <!-- signup -->
+                    <form action="home.html">
+                        <div class="row" id="signupDiv">
+                            <div class="col-12">
+                                <input type="text" id="signupUsername" placeholder="Username" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="email" id="signupEmail" id="email" placeholder="Email" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="password" id="signupPassword" placeholder="Password" required>
+                            </div>
+                            <div class="col-12 btnSubmit">
+                                <input type="submit" id="signupSubmit" value="SIGNUP" onclick="saveData()">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+    <script src="signup.js"></script>

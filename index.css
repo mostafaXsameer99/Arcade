@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap');
+* {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+    background-image: url("assets/websiteBackground.jpg");
+  }
+/* Login & Signup */
+main {
+  margin: 10% auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+.box h1 {
+    text-align: center;
+    margin: 15px 0px;
+    padding: 0px 10px;
+    color: white;
+    font-size: 200%;
+    border-bottom: 2px solid #c20a40;
+  }
+
+  
+
+/* form buttons and input */
+.box {
+    background-color: rgba(0, 0, 0, 0.85);
+    text-align: center;
+    border: #c20a40 solid 2px;
+    border-radius: 15px;
+  }
+  
+  .box input[type="text"],
+  .box input[type="password"],
+  .box input[type="email"],
+  .box input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    text-align: center;
+    border: 2px solid #105abe;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 350px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    font-size: 150%;
+  }
+  
+  .box input[type="text"]:focus,
+  .box input[type="password"]:focus,
+  .box input[type="email"]:focus {
+    width: 350px;
+    border-color: #c20a40;
+  }
+  
+  .box input[type="submit"] {
+      border: 2px solid #c20a40;
+      width: 200px;
+      margin-bottom: 20px;
+  }
+  
+  .box input[type="submit"]:hover {
+    background: #c20a40;
+    color: black;
+  }
+  .btnSubmit{
+    display: flex;
+    justify-content: center;
+  }

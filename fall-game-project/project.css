@@ -1,0 +1,73 @@
+*{
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+    
+    :root{
+    --bg-color:white;
+    --char-color:white;
+    --obst-color:#171427;
+    background-image:url('WhatsApp\ Image\ 2023-04-08\ at\ 5.08.53\ PM.jpeg');
+    
+    }
+    
+    .game-container{
+    width: 400px;
+    height: 500px;
+    background-color: rgb(194, 18, 18);
+    margin: auto;
+    border: 5px solid black;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    
+    
+    }
+    .character{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 400px;
+    left: 120px;
+    border-radius: 50%;
+    z-index: 1000;
+    
+    }
+     .block{
+    width: 100%;
+    height: 20px;
+    background-color: var(--obst-color);
+    position: absolute;    /*عشان ينطبع بالمساحه مع الكونتينر */
+    animation: moveDown 5s linear forwards;   /* forward عشان اما الانيميشن يخلص ميرجعش من الاول يقف غن اخر مكان هو كان فيه */
+    
+     }
+    
+     .hole{
+    
+        width: 70px;
+        height: 20px;
+        background-color: rgb(194, 18, 18);
+        position: absolute;
+        animation: moveDown 5s linear forwards;
+    
+     }
+    
+     @keyframes moveDown {
+        0%{
+            top: 0px;
+        }
+        100%{
+    top: 100%;
+    display: none;            /* عشان البلوك اما ينزل تحت يختفي ع طول */
+    
+    visibility: hidden;
+    
+        }
+    
+    
+     }

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="assets/arcade.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Games</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a href="#" class="navbar-brand fs-2 ms-3" style="color: #c20a40;font-family: ArcadeClassic;">
+                    <i class='bx bx-joystick-alt fs-3'></i> ARCADE
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
+                    <i class='bx bx-menu' style="color: white;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="btn">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#banner" class="nav-link mx-3 fs-4">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link mx-3 fs-4">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#games" class="nav-link mx-3 fs-4">Games</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" id="navbarUserName" class="nav-link mx-3 fs-4"><i class='bx bx-user'></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <!-- banner -->
+        <div id="banner" class="project_face">
+            <div class="banner">
+                <h1 class="face_title">Contiue Exploring</h1>
+                <p class="face_text">
+                    thank you very much for your concern and we hope to help you and make you happy
+                </p>
+                <a href="#" class="btn btn-secondary">EXPLORE</a>
+            </div>
+        </div>
+    </header>
+    <!-- slider -->
+    <main>
+        <div class="slider">
+            <div class="slide active-slide">
+                <img src="assets/g1.png" alt="ad">
+            </div>
+            <div class="slide">
+                <img src="assets/g2 (2).jpg" alt="ad">
+            </div>
+            <div class="slide">
+                <img src="assets/g3.jpg" alt="ad">
+            </div>
+            <div class="slide">
+                <img src="assets/g4.jpg" alt="ad">
+            </div>
+          </div>          
+    </main>
+    <!-- about -->
+    <section id="about" class="py-5" style="background-color: #fff;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-dark">
+              <h2 class="fw-bold text-center">About Us</h2>
+              <p class="lead">We are a passionate team of gamers who love to share our knowledge and experience with others. Our mission is to create a community where gamers can connect, learn, and have fun together.</p>
+              <p>We offer a wide range of gaming content, including game reviews, strategy guides, news, and more. Whether you're a casual gamer or a hardcore enthusiast, you'll find something valuable on our website.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="assets/websiteBackground.jpg" class="img-fluid rounded-3" alt="About Us">
+            </div>
+          </div>
+        </div>
+      </section>     
+    <!-- games -->
+    <section id="games" style="background-color: #C20A40; padding-block: 20px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+              <div class="Games d-lg-flex align-items-center gap-1">
+                <h1 class="game_title fs-2">For Free Games</h1>
+                <div class="d-flex gap-2 mb-2">
+                  <button class="btn-dark btn" id="bt2" onclick="OurGame()">Our Games </button>
+                  <button class="btn-dark btn" id="bt" onclick="OnlineGame()">Online Games </button>
+                </div>
+              </div>
+              <h1 class="title text-center">Play Now!</h1>
+              <div class="contant">
+                <div id="Our-games" style="display: block;">
+                  <a href="memory game/index.html" target="_blank">
+                    <div class="game">
+                      <h3>Memory Game</h3>
+                      <p>click to play</p>
+                    </div>
+                  </a>
+                  <a href="-3-3-Tic-Tac-Toe-Game/index.html" target="_blank">
+                    <div class="game">
+                      <h3>Tic-Tac-Toe Game</h3>
+                      <p>click to play</p>
+                    </div>
+                  </a>
+                  <a href="moleGame/mole.html" target="_blank">
+                    <div class="game">
+                      <h3>Mole Game</h3>
+                      <p>click to play</p>
+                    </div>
+                  </a>
+                  <a href="fall-game-project/project.html" target="_blank">
+                    <div class="game">
+                      <h3>Fall Game</h3>
+                      <p>click to play</p>
+                    </div>
+                  </a>
+                  
+                </div>
+                <div id="Online-games" style="display: none;">
+                  <a href="https://www.agame.com/game/drag-racing-city" target="_blank">
+                    <div class="game">
+                      <h3>drag-racing-city Game</h3>
+                      <p>click to play</p>
+                    </div>
+                  </a>
+                  <a href="https://www.bgames.com/game/drift3io/" target="_blank">
+                    <div class="game">
+                      <h3>drift3io Game</h3>
+                      <p>click to play</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       <!-- our team -->
+       <section class="ourteam container text-center my-5" id="team">
+        <h2>Our Team</h2>
+        <p class="text-muted section_subtitle">Unite and conquer in epic battles with your teammates.</p>
+        <div class="teams_container my-5">
+            <div class="team_container bg-secondary">
+                <img src="assets/khaled.jpg" alt="" />
+                <h4>Khaled Karam</h4>
+                <p class=" text-light text-capitalize">MEARN Stack Developer</p>
+            </div>
+            <div class="team_container bg-secondary">
+                <img src="assets/gemy.jpeg" alt="" />
+                <h4>Ahmed Gamal</h4>
+                <p class=" text-light text-capitalize">MEARN Stack Developer</p>
+            </div>
+            <div class="team_container bg-secondary">
+                <img src="assets/mostafa.jpeg" alt="" />
+                <h4>Mostafa Sameer</h4>
+                <p class=" text-light text-capitalize">MEARN Stack Developer</p>
+            </div>
+            <div class="team_container bg-secondary">
+                <img src="assets/hosam.png" alt="" />
+                <h4>Hosam Hasan</h4>
+                <p class=" text-light text-capitalize">MEARN Stack Developer</p>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section class="section deals my-5" id="deals">
+        <div class="title_wraber">
+            <h2 class="title">Hot <span class="subtitle">Deals</span></h2>
+        </div>
+        <form>
+            <div class="input_group">
+                <input type="email" placeholder="your email" class="form_control" />
+                <button type="submit" class="btn_submit">submit</button>
+            </div>
+        </form>
+    </section>
+    <!-- arrow top -->
+    <a href="#" id="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-col about">
+            <a href="#" class="navbar-brand fs-2 ms-3" style="color: #c20a40;font-family: ArcadeClassic;">
+                <i class='bx bx-joystick-alt fs-3'></i> ARCADE
+            </a>
+            <p>In  Arcade website you'll find your favorite games and play as you need.</p>
+          </div>
+          <div class="footer-col connect">
+            <h3>Our Social</h3>
+            <ul class="social-media">
+              <li><a href="#"><i class="fa-brands fa-facebook" style="color: #368af7;"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter" style="color: #4bc9d9;"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+          <div class="footer-col contact">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+              <li><i class="fas fa-map-marker-alt"></i> Assiut - Egypt</li>
+              <li><i class="fas fa-envelope"></i> info@Arcade.com</li>
+              <li><i class="fas fa-phone"></i> 01123838278</li>
+            </ul>
+          </div>
+        </div>
+        <p>&copy; All rights reserved by us</p>
+      </footer>
+      
+
+      <!-- Modal -->
+<div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="emailModalLabel">Email Subscription</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p id="emailModalText"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+    <script src="signup.js"></script>
+</body>
+
+</html>

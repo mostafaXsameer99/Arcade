@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>memory game</title>
+    <link rel="stylesheet" href="level1.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <form name="myForm" action="level1.html" method="GET" onsubmit="return validateForm()">
+        <input type="text" name="n" placeholder="Enter Name !" />
+        <input type="submit" name="sub" value="submit" />
+    </form>
+    <div id="myDiv"></div>
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["n"].value;
+            if (x == "" || x == null) {
+                var myDiv = document.getElementById("myDiv");
+                myDiv.innerText = "Please Enter Your Name";
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../assets/arcade.png" type="image/x-icon">
+</head>
+
+<body style="overflow-x: hidden;">
+    <section>
+        <h1 class="game--title">Tic-Tac-Toe Game</h1>
+        <div style="display:block;">
+            <div class="game--score">
+                <h2 style="color: #ffffff;">Score x : </h2>
+                <h3 id="ScoreX" style="font-size: 22px; padding-left:20px; color: white ;"> 0 </h3>
+                <p style="padding-right: 20px; padding-left:40px;color: white ; font-size: 22px; font-weight: bold;">
+                    ــــــ</p>
+                <h2 style="padding-left:20px ;color: rgb(255, 255, 255) ;">Score O : </h2>
+                <h3 id="ScoreO" style="font-size: 22px; padding-left:20px;color: white ;"> 0 </h3>
+            </div>
+            <div>
+
+                <div style="display: inline-flex;">
+                    <div style="width: 500px; height: 10px; ">
+                        <img src="winner.jpg" alt="right" style="padding-top:  -10px; 
+                         mix-blend-mode: multiply;  
+                         color: #ffffff;   
+                         background-color: #ffffff;     
+                        filter: contrast(1);">
+                    </div>
+                    <div class="game--container">
+                        <div data-cell-index="0" class="cell"></div>
+                        <div data-cell-index="1" class="cell"></div>
+                        <div data-cell-index="2" class="cell"></div>
+                        <div data-cell-index="3" class="cell"></div>
+                        <div data-cell-index="4" class="cell"></div>
+                        <div data-cell-index="5" class="cell"></div>
+                        <div data-cell-index="6" class="cell"></div>
+                        <div data-cell-index="7" class="cell"></div>
+                        <div data-cell-index="8" class="cell"></div>
+                    </div>
+                    <div style="width: 500px; height: 10px; ">
+                        <img src="3ukh.gif" alt="right" style="padding-top:  -10px; 
+                         mix-blend-mode: multiply;          
+                        filter: contrast(100);">
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="game--status"></h2>
+            <div>
+                <button class="game--Resit">Resit Game Score</button>
+                <button class="game--restart">Restart The Game</button>
+
+            </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
